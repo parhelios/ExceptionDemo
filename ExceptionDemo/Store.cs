@@ -1,4 +1,5 @@
-﻿using LINQDemo.Data;
+﻿using ClassLib;
+using LINQDemo.Data;
 
 namespace ExceptionDemo;
 
