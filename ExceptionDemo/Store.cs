@@ -16,11 +16,18 @@ public class Store
 
     private void ViewBasket()
     {
-        var cart = Db.GetCartForPerson(10);
-
-        foreach (var product in cart)
+        try
         {
-            Console.WriteLine(product.Name);
+            var cart = Db.GetCartForPerson(10);
+
+            foreach (var product in cart)
+            {
+                Console.WriteLine(product.Name);
+            }
+        }
+        catch (CartIndexException e)
+        {
+            System.Console.WriteLine(e.Message);
         }
     }
 }

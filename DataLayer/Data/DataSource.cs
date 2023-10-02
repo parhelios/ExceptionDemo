@@ -97,7 +97,7 @@ public class DataSource
 
     public List<Product> GetCartForPerson(int index)
     {
-        if (index >= People.Count ||index < 0)
+        if (index >= People.Count || index < 0)
         {
             throw new CartIndexException();
         }
