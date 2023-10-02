@@ -27,7 +27,15 @@ public class Store
         }
         catch (CartIndexException e)
         {
-            System.Console.WriteLine(e.Message);
+            Console.WriteLine(e.Message);
+        }
+        catch (ArgumentOutOfRangeException e)
+        {
+            Console.WriteLine("Ajajaj.");
+        }
+        finally
+        {
+            Console.WriteLine("All is reset.");
         }
     }
 }
