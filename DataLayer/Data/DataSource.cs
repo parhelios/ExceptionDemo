@@ -26,9 +26,9 @@ public class DataSource
         {
             new Person
             {
-                Id = 1, Age = rand.Next(15,100), Name = "Niklas", 
-                Cart = 
-                { 
+                Id = 1, Age = rand.Next(15,100), Name = "Niklas",
+                Cart =
+                {
                     new Product { Id = 1, Name = "Apple", Price = 3.0 },
                     new Product { Id = 1, Name = "Apple", Price = 3.0 },
                     new Product { Id = 4, Name = "Grapes", Price = 30.0 }
